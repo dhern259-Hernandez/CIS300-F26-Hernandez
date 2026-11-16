@@ -61,6 +61,26 @@ nav a       {
                 text-decoration: none; 
             }
 
+table       {
+                border: 2px solid #3399CC;
+                border-collapse: collapse;
+                margin-left: 200px;
+                margin-bottom: 50px;
+            }
+
+td, th      {
+                padding: 0.5em;
+                border: 2px solid #3399CC;
+            }
+
+td          {
+                text-align: center;
+            }
+
+tr:nth-of-type(odd) 
+            {
+                background-color: #f5fafc;
+            }
 
 footer      {
                 font-size: 90%;    
@@ -125,3 +145,137 @@ footer a    {
                 border-radius: 15px;
 
             }
+
+
+.art-gallery {
+                font-size: 1.5em;
+                padding: 0 40px;
+            }
+
+
+.art        {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                margin-bottom: 70px;
+            }
+
+
+.art div    {
+                flex: 1;
+            }
+
+.art img    {
+                width: 540px;
+                height: 248px;
+                object-fit: cover;
+                border-top: 3px solid #a05a5b;
+                border-left: 3px solid #a05a5b;
+                border-right: 4px groove #7a9353;
+                border-bottom: 4px groove #7a9353;
+                border-radius: 15px;
+            }
+
+.reverse    {
+                flex-direction: row-reverse;
+            }
+
+@media (max-width: 700px) {
+    #wrapper 
+    {
+        width: 100%;
+        min-width: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    #logo 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #logo img 
+    {
+        height: 120px;
+        width: 120px;
+        margin: 0 0 15px;
+    }
+
+    .link-image 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-image img 
+    {
+        height: auto;
+        width: 300px;
+    }
+
+    .intro 
+    {
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+    .intro img 
+    {
+        height: auto;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .art-gallery 
+    {
+        padding: 0 20px;
+    }
+
+    .art, .reverse 
+    {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 45px;
+    }
+
+    .art div 
+    {
+        width: 100%;
+    }
+
+    .art img 
+    {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    footer a 
+    {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 701px) {
+    .art-gallery 
+    {
+        padding: 0 20px;
+    }
+
+    .art, .reverse 
+    {
+        gap: 150px;
+        margin-bottom: 45px;
+    }
+
+    .art img 
+    {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+    }
+}
